@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .nav {
+        color: black;
+        text-align: center;
+      }
+
+      h2 {
+        margin-top: 0.5em;
+        color: white;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      .toggle-btn {
+        display: none;
+      }
+      .social-icons {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: #f8f9fa;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .social-icons a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #212529;
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 600px) {
+        ul {
+          visibility: hidden;
+          position: fixed;
+          top: 0;
+          left: -200px;
+          margin-top: 3.5em;
+          width: 200px;
+          height: auto;
+          background-color: #f8f9fa;
+          transition: 0.5s;
+        }
+
+        ul.show {
+          visibility: visible;
+          left: 0;
+        }
+
+        ul li {
+          display: block;
+          margin: 15px;
+        }
+
+        .toggle-btn {
+          color: white;
+          display: block;
+          z-index: 100;
+          margin: 0.3em;
+          margin-right: 0.4em;
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          border: 0;
+          background-color: #5dbb63;
+          border-radius: 3px;
+        }
+
+        .nav {
+          overflow-x: hidden;
+          background-color: green;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .serv {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .m {
+        height: 100vh;
+      }
+      p {
+        line-height: 2;
+        
+      }
+      .card{
+        z-index: -9;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social-icons">
+      <a
+        href="https://www.linkedin.com/in/your_linkedin_profile"
+        target="_blank"
+      >
+        <i class="fab fa-github" style="margin-left: 10px; font-size: 24px"></i
+      ></a>
+      <a href="https://twitter.com/your_twitter_username" target="_blank">
+        <i
+          class="fab fa-twitter"
+          style="margin-left: 10px; font-size: 24px"
+        ></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/your_linkedin_profile"
+        target="_blank"
+      >
+        <i
+          class="fab fa-linkedin"
+          style="margin-left: 10px; font-size: 24px"
+        ></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/your_linkedin_profile"
+        target="_blank"
+      >
+        <i class="fab fa-youtube" style="margin-left: 10px; font-size: 24px"></i
+      ></a>
+      <!-- Add more social media links as needed -->
+    </div>
+    <div class="nav w-100">
+      <button class="toggle-btn">&#9776;</button>
+      <h2>Victor Mugambi</h2>
+
+      <ul>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Services</li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <div class="main text-center mt-2">
+        <section>
+        <p class="lead serv" id="dynamicText">Web Developer</p>
+        <img
+          src="comm.jpeg"
+          class="img-responsive"
+          style="width: 100%; height: 15em; border-radius: 0.4em"
+          alt=""
+        />
+        <p class="lead mt-3 text-justify">
+          Passionate about web and application development, I put more effort on
+          developing beautiful UI. Its a challenging task but am catching up.
+        </p>
+        <p class="lead mt-3 text-justify">
+          I am currently undergoing ALX Africa Software Engineering Training,
+          focusing on fullstack development.
+        </p>
+      </section>
+      <section>
+        <div class="main">
+          <h3 style="font-size:2em; font-weight: bold;">Services</h3>
+          <div class="card pt-4 mb-2">
+            <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Web Development</h4>
+            <p class="card-body pt-0" style="font-size:1.3em;">Working as a web developer for one year now. I use ReactJs, Bootstrap and CSS to build websites.</p>
+          </div>
+          <div class="card pt-4 mt-2 mb-2">
+            <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Fullstack Development</h4>
+            <p class="card-body pt-0" style="font-size:1.3em;">I have created five web applications that are fully functional with full database integration.I use Php and MYSQL for backend. I have a little experience with Laravel and NodeJs</p>
+          </div>
+          <div class="card pt-4 mt-2 mb-2">
+            <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Problem Solving</h4>
+            <p class="card-body pt-0" style="font-size:1.3em;">I have the ability to systematically analyze and approach tasks, enabling me to break down complex tasks into more manageable and straightforward components. This skill allows me to handle challenges with confidence and efficiency.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="main">
+          <h3 style="font-size:2em; font-weight: bold;">Skills</h3>
+          <div class="card pt-4 mt-2 mb-2">
+            <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Front-End</h4>
+            <div class="row d-flex">
+                <div class="col-sm d-flex justify-content-around">
+                  <div class="article">
+                  <i class="fab fa-html5 text-success" style=" font-size: 35px"></i>
+                  <p style="margin-top: 5px;  font-weight: bold;">HTML</p>
+                  </div>
+                  <div class="article">
+            <i class="fab fa-css3 text-info" style="margin-left: 1em; font-size: 35px"></i>
+            <p style="margin-top: 5px; font-weight: bold;">CSS</p>
+            </div>
+                </div>
+                <div class="col-sm d-flex justify-content-around">
+            <div class="article">
+                <i class="fab fa-bootstrap text-primary" style=" font-size: 35px"></i>
+                <p style="margin-top: 5px;  font-weight: bold;">Bootstrap</p>
+                </div>
+                <div class="article">
+                <i class="fab fa-react text-info " style="margin-left: 1em; font-size: 35px"></i>
+                <p style="margin-top: 5px;  font-weight: bold;">ReactJs</p>
+              </div>
+                </div>
+          
+              </div>
+            </div>
+            <div class="card pt-4 mt-2 mb-2 ">
+              <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Backend-End</h4>
+              <div class="row d-flex">
+                  <div class="col-sm d-flex justify-content-around">
+                 <div class="article"> <i class="fab fa-php text-success" style=" font-size: 35px"></i>
+                  <p style="margin-top: 5px;  font-weight: bold;">PHP</p>
+                </div>
+                <div class="article">
+                  <i class="fas fa-database  text-secondary" style="margin-left: 1em; font-size: 35px"></i>
+              <p style="margin-top: 5px;  font-weight: bold;">MYSQL</p>
+                </div>
+              
+              </div>
+              <div class="col-sm d-flex justify-content-around"> 
+                <div class="article">
+                  <i class="fab fa-node-js text-primary" style=" font-size: 35px"></i>
+                  <p style="margin-top: 5px;  font-weight: bold;">NodeJs</p>
+                </div>
+                <div class="article">
+                  <i class="fab fa-microsoft text-info " style="margin-left: 1.5em; font-size: 35px"></i>.Net
+                  <p style="margin-top: 5px;  font-weight: bold;">C# programming</p>
+                </div>
+                 
+                  </div>
+            
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      </div>
+
+    </div>
+    </div>
+    <div class="container-fluid m-0" style="background-color: #5dbb63;">
+    <div class="container p-5" style="text-align: center;">
+      <div class=" text-center" style="text-align: center; color: white;">
+        <a
+        href="https://www.linkedin.com/in/your_linkedin_profile"
+        target="_blank"
+      >
+        <i class="fab fa-github" style="margin-left: 10px; font-size: 24px"></i
+      ></a>
+      <a href="https://twitter.com/your_twitter_username" target="_blank">
+        <i
+          class="fab fa-twitter"
+          style="margin-left: 10px; font-size: 24px"
+        ></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/your_linkedin_profile"
+        target="_blank"
+      >
+        <i
+          class="fab fa-linkedin"
+          style="margin-left: 10px; font-size: 24px"
+        ></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/your_linkedin_profile"
+        target="_blank"
+      >
+        <i class="fab fa-youtube" style="margin-left: 10px; font-size: 24px"></i
+      ></a>
+      </div>
+      <p class="lead text-center text-white ">
+        Isiolo, 60300
+      </p>
+      <p class="lead mt-5">Copyright @2022. All rights reserved by Victor Mugambi</p>
+    </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const navList = document.querySelector(".nav ul");
+
+        toggleBtn.addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevents the document click event from triggering immediately
+          navList.classList.toggle("show");
+        });
+
+        // Close sidebar when a menu item is clicked
+        const navItems = document.querySelectorAll(".nav li");
+        navItems.forEach(function (item) {
+          item.addEventListener("click", function () {
+            navList.classList.remove("show");
+          });
+        });
+
+        // Close sidebar when clicking outside its area
+        document.body.addEventListener("click", function () {
+          if (navList.classList.contains("show")) {
+            navList.classList.remove("show");
+          }
+        });
+
+        // Prevent clicks on the sidebar from closing it
+        navList.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+      });
+      // Array of words
+      const wordsArray = ["Web Developer", "S/W Developer", "SEO optimization"];
+
+      // Function to rotate words
+      function rotateWords() {
+        let index = 0;
+
+        function updateText() {
+          document.getElementById("dynamicText").style.color = getRandomColor();
+          document.getElementById("dynamicText").textContent =
+            wordsArray[index];
+
+          index = (index + 1) % wordsArray.length;
+        }
+
+        // Initial call
+        updateText();
+
+        // Set interval to rotate words every 3 seconds (adjust as needed)
+        setInterval(updateText, 3000);
+      }
+
+      // Call the function to start rotating words
+      rotateWords();
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </body>
+</html>
