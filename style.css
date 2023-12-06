@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     box-sizing: border-box;
   }
-
+p{
+    font-family: Arial, serif;
+}
   .nav {
     color: black;
     text-align: center;
@@ -46,6 +48,7 @@ body {
     font-size: 20px;
   }
   @media only screen and (max-width: 600px) {
+    
     ul {
       visibility: hidden;
       position: fixed;
@@ -116,4 +119,75 @@ body {
     
     font-family: 'Nunito Sans', sans-serif;
     
+  }
+
+  @media only screen and (min-width: 600px) {
+    .cont{
+        display: flex;
+
+    }
+    
+    
+    ul {
+      
+      position: fixed;
+      top: 0;
+      left: -200px;
+      margin-top: 3.5em;
+      width: 200px;
+      height: auto;
+      background-color: #f8f9fa;
+      transition: 0.5s;
+    }
+
+    ul.show {
+      visibility: visible;
+      left: 0;
+    }
+
+    ul li {
+      display: block;
+      margin: 15px;
+    }
+
+    .toggle-btn {
+      color: white;
+      display: block;
+      z-index: 100;
+      margin: 0.3em;
+      margin-right: 0.4em;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border: 0;
+      background-color: #5dbb63;
+      border-radius: 3px;
+    }
+
+    .nav {
+      overflow-x: hidden;
+      background-color: green;
+      margin: 0;
+      padding: 0;
+    }
+    .aboutme{
+        transform: scale(.9);
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        width: 30em;
+        margin: .3em;
+    }
+    .firstcard{
+        margin-top: .5em;
+    }
+    .icos{
+        margin-bottom: 2em;
+        margin-top: 2em;
+        
+    }
   }
