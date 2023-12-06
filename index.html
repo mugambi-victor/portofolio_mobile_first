@@ -15,117 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        box-sizing: border-box;
-      }
-
-      .nav {
-        color: black;
-        text-align: center;
-      }
-
-      h2 {
-        margin-top: 0.5em;
-        color: white;
-      }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      li {
-        display: inline;
-        margin-right: 15px;
-      }
-
-      .toggle-btn {
-        display: none;
-      }
-      .social-icons {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        background-color: #f8f9fa;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .social-icons a {
-        display: block;
-        margin-bottom: 10px;
-        text-decoration: none;
-        color: #212529;
-        font-size: 20px;
-      }
-      @media only screen and (max-width: 600px) {
-        ul {
-          visibility: hidden;
-          position: fixed;
-          top: 0;
-          left: -200px;
-          margin-top: 3.5em;
-          width: 200px;
-          height: auto;
-          background-color: #f8f9fa;
-          transition: 0.5s;
-        }
-
-        ul.show {
-          visibility: visible;
-          left: 0;
-        }
-
-        ul li {
-          display: block;
-          margin: 15px;
-        }
-
-        .toggle-btn {
-          color: white;
-          display: block;
-          z-index: 100;
-          margin: 0.3em;
-          margin-right: 0.4em;
-          padding-left: 1em;
-          padding-right: 1em;
-          padding-top: 0.5em;
-          padding-bottom: 0.5em;
-          border: 0;
-          background-color: #5dbb63;
-          border-radius: 3px;
-        }
-
-        .nav {
-          overflow-x: hidden;
-          background-color: green;
-          margin: 0;
-          padding: 0;
-        }
-      }
-      .serv {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-      }
-
-      .m {
-        height: 100vh;
-      }
-      p {
-        line-height: 2;
-        
-      }
-      .card{
-        z-index: -9;
-        
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="social-icons">
@@ -159,16 +49,26 @@
       ></a>
       <!-- Add more social media links as needed -->
     </div>
-    <div class="nav w-100">
-      <button class="toggle-btn">&#9776;</button>
-      <h2>Victor Mugambi</h2>
-
+    <div class="nav w-100" id="nav">
+      <div class="row">
+        <div class="col-9 d-flex">
+          <button class="toggle-btn">&#9776;</button><h2>Victor Mugambi</h2>
+        </div>
+        <div class="col-2 " style="margin-left: auto;">
+          <i  class="bi bi-moon-fill"></i>
+         <i class="fas fa-moon mt-2 ms-5" id="nightModeBtn" style="font-size: 32px;"></i>
+         <i class="fas fa-sun mt-2 ms-5 text-white" id="dayModeBtn" style="font-size: 32px; display: none;"></i>
+        </div>
+      </div>
+    
       <ul>
         <li class="nav-item">Home</li>
         <li class="nav-item">About</li>
         <li class="nav-item">Services</li>
       </ul>
     </div>
+    
+
     <div class="container-fluid">
       <div class="main text-center mt-2">
         <section>
@@ -273,7 +173,7 @@
 
     </div>
     </div>
-    <div class="container-fluid m-0" style="background-color: #5dbb63;">
+    <div class="container-fluid footer m-0" id="footer" style="background-color: #5dbb63;">
     <div class="container p-5" style="text-align: center;">
       <div class=" text-center" style="text-align: center; color: white;">
         <a
@@ -305,7 +205,7 @@
         <i class="fab fa-youtube" style="margin-left: 10px; font-size: 24px"></i
       ></a>
       </div>
-      <p class="lead text-center text-white ">
+      <p class="lead text-center text-white mt-4 fw-bold ">
         Isiolo, 60300
       </p>
       <p class="lead mt-5">Copyright @2023. All rights reserved by Victor Mugambi</p>
@@ -316,6 +216,9 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- Add this to the head section of your HTML, before your existing script tags -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const toggleBtn = document.querySelector(".toggle-btn");
@@ -378,6 +281,33 @@
         }
         return color;
       }
+
+  $(document).ready(function () {
+    const nightModeBtn = $("#nightModeBtn");
+    const footers = $("#footer");
+    const body = $("body");
+    const nav = $("#nav");
+    const dayModeBtn = $("#dayModeBtn");
+
+    nightModeBtn.on("click", function () {
+      footers.toggleClass("bg-dark");
+      body.toggleClass("bg-dark");
+      body.toggleClass("text-white");
+      nav.toggleClass("bg-dark");
+      dayModeBtn.toggle();
+      nightModeBtn.toggle();
+    });
+    dayModeBtn.on("click", function () {
+      footers.toggleClass("bg-dark");
+      body.toggleClass("bg-dark");
+      body.toggleClass("text-white");
+      nav.toggleClass("bg-dark");
+      dayModeBtn.toggle();
+      nightModeBtn.toggle();
+    });
+  });
+  
+
     </script>
   </body>
 </html>
