@@ -1,104 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portofolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Josefin+Sans&family=Kanit:wght@200&family=Nunito+Sans:opsz@6..12&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="social-icons">
-      <a
-        href="https://github.com/mugambi-victor"
-        target="_blank"
-      >
-        <i class="fab fa-github text-dark " id="git" style="margin-left: 10px; font-size: 24px"></i
-      ></a>
-      <a
-      href="https://www.linkedin.com/in/victor-mugambi-18bb87203/"
-      target="_blank"
-    >
-      <i
-        class="fab fa-linkedin text-primary"
-        style="margin-left: 10px; font-size: 24px"
-      ></i
-    ></a>
-      <a href="https://twitter.com/MMugambi87239" target="_blank">
-        <i
-          class="fab fa-twitter text-primary"
-          style="margin-left: 10px; font-size: 24px"
-        ></i>
-      </a>
-     
-      <a
-        href="https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw"
-        target="_blank"
-      >
-        <i class="fab fa-youtube text-danger" style="margin-left: 10px; font-size: 24px"></i
-      ></a>
-      <!-- Add more social media links as needed -->
-    </div>
-    <div class=" nav" id="nav">
-      <div class="row w-100 d-flex justify-content-between">
-        <div class="col-sm d-flex">
-          <button class="toggle-btn">&#9776;</button><h2>Victor Mugambi</h2>
-          <i class="fas fa-moon mt-2  " id="nightModeBtn" style="font-size: 32px; margin-left:auto;"></i>
-         <i class="fas fa-sun mt-2  text-white" id="dayModeBtn" style="font-size: 32px; margin-left:auto; display: none;"></i>
-        </div>
-        
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Josefin+Sans&family=Kanit:wght@200&family=Nunito+Sans:opsz@6..12&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="social-icons">
+    <a href="https://github.com/mugambi-victor" target="_blank">
+      <i class="fab fa-github text-dark " id="git" style="margin-left: 10px; font-size: 24px"></i></a>
+    <a href="https://www.linkedin.com/in/victor-mugambi-18bb87203/" target="_blank">
+      <i class="fab fa-linkedin text-primary" style="margin-left: 10px; font-size: 24px"></i></a>
+    <a href="https://twitter.com/MMugambi87239" target="_blank">
+      <i class="fab fa-twitter text-primary" style="margin-left: 10px; font-size: 24px"></i>
+    </a>
+
+    <a href="https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw" target="_blank">
+      <i class="fab fa-youtube text-danger" style="margin-left: 10px; font-size: 24px"></i></a>
+    <!-- Add more social media links as needed -->
+  </div>
+  <div class=" nav" id="nav">
+    <div class="row w-100 d-flex justify-content-between">
+      <div class="col-sm d-flex">
+        <button class="toggle-btn">&#9776;</button>
+        <h2>Victor Mugambi</h2>
+        <i class="fas fa-moon mt-2  " id="nightModeBtn" style="font-size: 32px; margin-left:auto;"></i>
+        <i class="fas fa-sun mt-2  text-white" id="dayModeBtn"
+          style="font-size: 32px; margin-left:auto; display: none;"></i>
       </div>
-    
-      <ul>
-        <li class="nav-item">Home</li>
-        <li class="nav-item">About</li>
-        <li class="nav-item">Services</li>
-      </ul>
-    </div>
-    
 
-    <div class="container-fluid">
-      <div class="main text-center mt-2">
-        <section>
-        <p class="lead serv" id="dynamicText">Web Developer</p>
-        <div class="cont">
-          <img
-          src="comm.png"
-          class=" img img-responsive"
-          style="width: 100%; height: 17em; border-radius: 0.4em"
-          alt="profile photo"
-          loading="lazy"
-        />
-        <div class="aboutme">
-          <p class="lead mt-3 text-justify">
-            Passionate about web and application development, I put more effort on
-            developing beautiful UI. Its a challenging task but am catching up.
-          </p>
-          <p class="lead mt-3 text-justify">
-            I am currently undergoing ALX Africa Software Engineering Training,
-            focusing on fullstack development.
-          </p>
-          
-          <a href="VICTOR_MUGAMBI_CURRICULUM_VITAE.pdf" download="YourResume.pdf">
-            <button  class="btn btn-primary mb-3">Download Resume</button>
-        </a>
+    </div>
+
+    <ul>
+      <li class="nav-item">Home</li>
+      <li class="nav-item">About</li>
+      <li class="nav-item">Services</li>
+    </ul>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="main text-center mt-2">
+      <section>
+        <p class="lead serv" id="dynamicText">S/w Developer</p>
+        <div class="">
+          <img src="comm.png" class=" img img-responsive" style="width: 100%; height: 20em; border-radius: 0.4em"
+            alt="profile photo" loading="lazy" />
+          <div class="aboutme">
+            <p class="lead mt-3 text-justify">
+              I create simple and straightforward applications and I love what I do. I am a backend developer, currently
+              working on honing my Front-End skills. I put effort on
+              developing simple and intuitive UI. Its a challenging task but am catching up.
+            </p>
+            <p class="lead mt-3 text-justify">
+              I am currently undergoing ALX Africa Software Engineering Training,
+              focusing on fullstack development.
+            </p>
+
+            <a href="VICTOR_MUGAMBI_CURRICULUM_VITAE.pdf" download="YourResume.pdf">
+              <button class="btn btn-primary mb-3">Download Resume</button>
+            </a>
+          </div>
         </div>
-        </div>
-       
+
       </section>
       <section>
         <div class="main">
@@ -106,227 +83,240 @@
           <div class="cards">
             <div class="card pt-4 mb-2 firstcard">
               <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Web Development</h4>
-              <p class="card-body pt-0" style="font-size:1.3em;">Working as a web developer for one year now. I use ReactJs, Bootstrap and CSS to build websites.</p>
+              <p class="card-body pt-0" style="font-size:1.3em;">Working as a web developer for one year now. I use
+                ReactJs, Bootstrap and CSS to build websites.</p>
             </div>
             <div class="card pt-4 mt-2 mb-2">
               <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Fullstack Development</h4>
-              <p class="card-body pt-0" style="font-size:1.3em;">I have created five web applications that are fully functional with full database integration.I use Php and MYSQL for backend. I have a little experience with Laravel and NodeJs</p>
+              <p class="card-body pt-0" style="font-size:1.3em;">I have created five web applications that are fully
+                functional with full database integration.I use Php and MYSQL for backend. I have a little experience
+                with Laravel and NodeJs</p>
             </div>
             <div class="card pt-4 mt-2 mb-2">
               <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Problem Solving</h4>
-              <p class="card-body pt-0" style="font-size:1.3em;">I have the ability to systematically analyze and approach tasks, enabling me to break down complex tasks into more manageable and straightforward components. This skill allows me to handle challenges with confidence and efficiency.</p>
+              <p class="card-body pt-0" style="font-size:1.3em;">I have the ability to systematically analyze and
+                approach tasks, enabling me to break down complex tasks into more manageable and straightforward
+                components. This skill allows me to handle challenges with confidence and efficiency.</p>
             </div>
           </div>
-          
+
         </div>
       </section>
       <section>
         <div class="main">
           <h3 style="font-size:2em; font-weight: bold;">Skills</h3>
           <div class="cards">
-          <div class="card pt-4 mt-2 mb-2">
-            <h4 class="card-title  " style="font-size:1.5em; color: #5dbb63;">Front-End</h4>
-            <div class="row d-flex icos">
+            <div class="card pt-4 mt-2 mb-2">
+              <h4 class="card-title  " style="font-size:1.5em; color: #5dbb63;">Front-End</h4>
+              <div class="row d-flex icos">
                 <div class="col-sm d-flex justify-content-around">
                   <div class="article">
-                  <i class="fab fa-html5 text-success" style=" font-size: 35px"></i>
-                  <p style="margin-top: 5px;  font-weight: bold;">HTML</p>
+                    <i class="fab fa-html5 text-success" style=" font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">HTML</p>
                   </div>
                   <div class="article">
-            <i class="fab fa-css3 text-info" style="margin-left: 1em; font-size: 35px"></i>
-            <p style="margin-top: 5px; font-weight: bold;">CSS</p>
-            </div>
+                    <i class="fab fa-css3 text-info" style="margin-left: 1em; font-size: 35px"></i>
+                    <p style="margin-top: 5px; font-weight: bold;">CSS</p>
+                  </div>
+                  <div class="article">
+                    <i class="fab fa-bootstrap text-primary" style=" font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">Bootstrap</p>
+                  </div>
                 </div>
+
+
+              </div>
+              <div class="row d-flex icos">
                 <div class="col-sm d-flex justify-content-around">
-            <div class="article">
-                <i class="fab fa-bootstrap text-primary" style=" font-size: 35px"></i>
-                <p style="margin-top: 5px;  font-weight: bold;">Bootstrap</p>
+                  <div class="article">
+                    <i class="fab fa-html5 text-success" style=" font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">AngularJs</p>
+                  </div>
+                  <div class="article">
+                    <i class="fab fa-css3 text-info" style="margin-left: 1em; font-size: 35px"></i>
+                    <p style="margin-top: 5px; font-weight: bold;">TailwindCSS</p>
+                  </div>
+                  <div class="article">
+                    <i class="fab fa-react text-info " style="margin-left: 1em; font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">ReactJs</p>
+                  </div>
                 </div>
-                <div class="article">
-                <i class="fab fa-react text-info " style="margin-left: 1em; font-size: 35px"></i>
-                <p style="margin-top: 5px;  font-weight: bold;">ReactJs</p>
+
               </div>
-                </div>
-          
-              </div>
+
             </div>
+
             <div class="card pt-4 mt-2 mb-2 ">
               <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Backend-End</h4>
               <div class="row d-flex icos">
-                  <div class="col-sm d-flex justify-content-around">
-                 <div class="article"> <i class="fab fa-php text-success" style=" font-size: 35px"></i>
-                  <p style="margin-top: 5px;  font-weight: bold;">PHP</p>
-                </div>
-                <div class="article">
-                  <i class="fas fa-database  text-secondary" style="margin-left: 1em; font-size: 35px"></i>
-              <p style="margin-top: 5px;  font-weight: bold;">MYSQL</p>
-                </div>
-              
-              </div>
-              <div class="col-sm d-flex justify-content-around"> 
-                <div class="article">
-                  <i class="fab fa-node-js text-primary" style=" font-size: 35px"></i>
-                  <p style="margin-top: 5px;  font-weight: bold;">NodeJs</p>
-                </div>
-                <div class="article">
-                  <i class="fab fa-microsoft text-info " style="margin-left: 1.5em; font-size: 35px"></i>.Net
-                  <p style="margin-top: 5px;  font-weight: bold;">C# programming</p>
-                </div>
-                 
+                <div class="col-sm d-flex justify-content-around">
+                  <div class="article"> <i class="fab fa-php text-success" style=" font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">PHP</p>
                   </div>
-            
+                  <div class="article">
+                    <i class="fas fa-database  text-secondary" style="margin-left: 1em; font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">MYSQL</p>
+                  </div>
+
                 </div>
+
               </div>
+              <div class="row d-flex icos">
+                <div class="col-sm d-flex justify-content-around">
+                  <div class="article"> <i class="fab fa-php text-success" style=" font-size: 35px"></i>
+                    <p style="margin-top: 5px;  font-weight: bold;">Laravel</p>
+                  </div>
+                  <div class="article">
+                    <i class="fab fa-microsoft text-info " style="margin-left: 1.5em; font-size: 35px"></i>.Net
+                    <p style="margin-top: 5px;  font-weight: bold;">C# programming</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      </section>
-      
-      </div>
+    </div>
+  </div>
+  </section>
 
-    </div>
-    </div>
-    <div class="container-fluid footer m-0" id="footer" style="background-color: #5dbb63;">
+  </div>
+
+  </div>
+  </div>
+  <div class="container-fluid footer m-0" id="footer" style="background-color: #5dbb63;">
     <div class="container p-5" style="text-align: center;">
       <div class=" text-center" style="text-align: center; color: white;">
-        <a
-        href="https://github.com/mugambi-victor"
-        target="_blank"
-      >
-        <i class="fab fa-github " id="git" style="margin-left: 10px; font-size: 24px"></i
-      ></a>
-      <a
-      href="https://www.linkedin.com/in/victor-mugambi-18bb87203/"
-      target="_blank"
-    >
-      <i
-        class="fab fa-linkedin text-primary"
-        style="margin-left: 10px; font-size: 24px"
-      ></i
-    ></a>
-      <a href="https://twitter.com/MMugambi87239" target="_blank">
-        <i
-          class="fab fa-twitter"
-          style="margin-left: 10px; font-size: 24px"
-        ></i>
-      </a>
-     
-      <a
-        href="https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw"
-        target="_blank"
-      >
-        <i class="fab fa-youtube text-danger" style="margin-left: 10px; font-size: 24px"></i
-      ></a>
+        <a href="https://github.com/mugambi-victor" target="_blank">
+          <i class="fab fa-github " id="git" style="margin-left: 10px; font-size: 24px"></i></a>
+        <a href="https://www.linkedin.com/in/victor-mugambi-18bb87203/" target="_blank">
+          <i class="fab fa-linkedin text-primary" style="margin-left: 10px; font-size: 24px"></i></a>
+        <a href="https://twitter.com/MMugambi87239" target="_blank">
+          <i class="fab fa-twitter" style="margin-left: 10px; font-size: 24px"></i>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw" target="_blank">
+          <i class="fab fa-youtube text-danger" style="margin-left: 10px; font-size: 24px"></i></a>
       </div>
+      <p class="lead text-center mt-4 mb-4 fw-bold ">
+        <em>Phone:0740843795</em>
+        <em>Email:victormmugambi@gmail.com</em>
+      </p>
       <p class="lead text-center mt-4 mb-4 fw-bold ">
         <em>Isiolo, Kenya</em>
       </p>
       <p class="lead ">Copyright @2023. All rights reserved by Victor Mugambi</p>
     </div>
-    </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Add this to the head section of your HTML, before your existing script tags -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Add this to the head section of your HTML, before your existing script tags -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleBtn = document.querySelector(".toggle-btn");
-        const navList = document.querySelector(".nav ul");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const navList = document.querySelector(".nav ul");
 
-        toggleBtn.addEventListener("click", function (event) {
-          event.stopPropagation(); // Prevents the document click event from triggering immediately
-          navList.classList.toggle("show");
-        });
+      toggleBtn.addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevents the document click event from triggering immediately
+        navList.classList.toggle("show");
+        if (navList.classList.contains("show")&& window.innerWidth>600) {
+        navList.style.marginLeft = "20.7em"; // Adjust margin as needed
+        navList.style.position = "fixed";
+    } else {
+        navList.style.margin = ""; // Reset margin if the "show" class is removed
+    }
+      });
 
-        // Close sidebar when a menu item is clicked
-        const navItems = document.querySelectorAll(".nav li");
-        navItems.forEach(function (item) {
-          item.addEventListener("click", function () {
-            navList.classList.remove("show");
-          });
-        });
-
-        // Close sidebar when clicking outside its area
-        document.body.addEventListener("click", function () {
-          if (navList.classList.contains("show")) {
-            navList.classList.remove("show");
-          }
-        });
-
-        // Prevent clicks on the sidebar from closing it
-        navList.addEventListener("click", function (event) {
-          event.stopPropagation();
+      // Close sidebar when a menu item is clicked
+      const navItems = document.querySelectorAll(".nav li");
+      navItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          navList.classList.remove("show");
         });
       });
-      // Array of words
-      const wordsArray = ["Web Developer", "S/W Developer", "SEO optimization"];
 
-      // Function to rotate words
-      function rotateWords() {
-        let index = 0;
-
-        function updateText() {
-          document.getElementById("dynamicText").style.color = getRandomColor();
-          document.getElementById("dynamicText").textContent =
-            wordsArray[index];
-
-          index = (index + 1) % wordsArray.length;
+      // Close sidebar when clicking outside its area
+      document.body.addEventListener("click", function () {
+        if (navList.classList.contains("show")) {
+          navList.classList.remove("show");
         }
+      });
 
-        // Initial call
-        updateText();
+      // Prevent clicks on the sidebar from closing it
+      navList.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+    });
+    // Array of words
+    const wordsArray = ["S/W Developer", "Web Developer", "System Analyst"];
 
-        // Set interval to rotate words every 3 seconds (adjust as needed)
-        setInterval(updateText, 3000);
+    // Function to rotate words
+    function rotateWords() {
+      let index = 0;
+
+      function updateText() {
+        document.getElementById("dynamicText").style.color = getRandomColor();
+        document.getElementById("dynamicText").textContent =
+          wordsArray[index];
+
+        index = (index + 1) % wordsArray.length;
       }
 
-      // Call the function to start rotating words
-      rotateWords();
-      function getRandomColor() {
-        const letters = "0123456789ABCDEF";
-        let color = "#";
-        for (let i = 0; i < 6; i++) {
-          color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
+      // Initial call
+      updateText();
+
+      // Set interval to rotate words every 3 seconds (adjust as needed)
+      setInterval(updateText, 3000);
+    }
+
+    // Call the function to start rotating words
+    rotateWords();
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
       }
+      return color;
+    }
 
-  $(document).ready(function () {
-    const nightModeBtn = $("#nightModeBtn");
-    const footers = $("#footer");
-    const body = $("body");
-    const nav = $("#nav");
-    const dayModeBtn = $("#dayModeBtn");
-    const git = $("#git");
+    $(document).ready(function () {
+      const nightModeBtn = $("#nightModeBtn");
+      const footers = $("#footer");
+      const body = $("body");
+      const nav = $("#nav");
+      const dayModeBtn = $("#dayModeBtn");
+      const git = $("#git");
 
-    nightModeBtn.on("click", function () {
-      footers.toggleClass("bg-dark");
-      body.toggleClass("bg-dark");
-      git.toggleClass("text-dark");
-      body.toggleClass("text-white");
-      nav.toggleClass("bg-dark");
-      dayModeBtn.toggle();
-      nightModeBtn.toggle();
-      
+      nightModeBtn.on("click", function () {
+        footers.toggleClass("bg-dark");
+        body.toggleClass("bg-dark");
+        git.toggleClass("text-dark");
+        body.toggleClass("text-white");
+        nav.toggleClass("bg-dark");
+        dayModeBtn.toggle();
+        nightModeBtn.toggle();
+
+      });
+      dayModeBtn.on("click", function () {
+        footers.toggleClass("bg-dark");
+        body.toggleClass("bg-dark");
+        git.toggleClass("text-dark");
+        body.toggleClass("text-white");
+        nav.toggleClass("bg-dark");
+        dayModeBtn.toggle();
+        nightModeBtn.toggle();
+
+      });
     });
-    dayModeBtn.on("click", function () {
-      footers.toggleClass("bg-dark");
-      body.toggleClass("bg-dark");
-      git.toggleClass("text-dark");
-      body.toggleClass("text-white");
-      nav.toggleClass("bg-dark");
-      dayModeBtn.toggle();
-      nightModeBtn.toggle();
-      
-    });
-  });
-  
 
-    </script>
-  </body>
+
+  </script>
+</body>
+
 </html>

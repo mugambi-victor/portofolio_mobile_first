@@ -2,7 +2,10 @@ body {
     
     margin: 0;
     box-sizing: border-box;
+    
+    
   }
+ 
 p{
     font-family: Arial, serif;
 }
@@ -47,7 +50,7 @@ p{
     color: #212529;
     font-size: 20px;
   }
-  @media only screen and (max-width: 600px) {
+  @media(max-width: 600px) {
     
     ul {
       visibility: hidden;
@@ -92,6 +95,7 @@ p{
       margin: 0;
       padding: 0;
     }
+   
   }
   .serv {
     font-size: 24px;
@@ -121,7 +125,7 @@ p{
     
   }
 
-  @media only screen and (min-width: 600px) {
+  @media (min-width: 600px) {
     .cont{
         display: flex;
 
@@ -176,7 +180,7 @@ p{
     }
     .cards{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     .card{
         width: 30em;
@@ -189,5 +193,28 @@ p{
         margin-bottom: 2em;
         margin-top: 2em;
         
+    }
+    body{
+      max-width: 600px;
+      margin-right:auto;
+      margin-left:auto;
+      border-left: 2px solid gray ;
+      border-right: 2px solid gray ;
+    }
+    .social-icons {
+      position: fixed;
+      top: 50%;
+      left: auto;
+      transform: translateY(-50%);
+      background-color: #f8f9fa;
+      padding: 10px;
+      
+    }
+    .cards{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  flex-wrap: wrap;
     }
   }
