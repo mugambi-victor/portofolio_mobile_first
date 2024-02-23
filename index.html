@@ -58,17 +58,18 @@
     <div class="main text-center mt-2">
       <section>
         <p class="lead serv" id="dynamicText">S/w Developer</p>
-        <div class="">
-          <img src="comm.png" class=" img img-responsive" style="width: 100%; height: 20em; border-radius: 0.4em"
-            alt="profile photo" loading="lazy" />
+        <div class="" >
+          <div class="img" style="background-image: url(comm.png); background-position: center; background-size: cover; height: 20em;"></div>
+          <!-- <img src="" class=" img img-responsive" style="width: 100%; height: 20em; border-radius: 0.4em"
+            alt="profile photo" loading="lazy" /> -->
           <div class="aboutme">
-            <p class="lead mt-3 text-justify">
+            <p class="lead mt-3 text-justify" style="font-size: 1.2rem;">
               I create simple and straightforward applications and I love what I do. I am a backend developer, currently
               working on honing my Front-End skills. I put effort on
               developing simple and intuitive UI. Its a challenging task but am catching up.
             </p>
-            <p class="lead mt-3 text-justify">
-              I am currently undergoing ALX Africa Software Engineering Training,
+            <p class="lead mt-3 text-justify" style="font-size: 1.2rem;">
+              I am currently undergoing ALX Africa Software Engineering Progrmme,
               focusing on fullstack development.
             </p>
 
@@ -85,8 +86,7 @@
           <div class="cards">
             <div class="card pt-4 mb-2 firstcard">
               <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Web Development</h4>
-              <p class="card-body pt-0" style="font-size:1.3em;">Working as a web developer for one year now. I use
-                ReactJs, Bootstrap and CSS to build websites.</p>
+              <p class="card-body pt-0" style="font-size:1.3em;">Working as a web developer for one year now. I use Angular, ReactJs, Bootstrap and CSS to build websites.</p>
             </div>
             <div class="card pt-4 mt-2 mb-2">
               <h4 class="card-title " style="font-size:1.5em; color: #5dbb63;">Fullstack Development</h4>
@@ -118,7 +118,7 @@
                     <p style="margin-top: 5px;  font-weight: bold;">HTML</p>
                   </div>
                   <div class="article">
-                    <i class="fab fa-css3 text-info" style="margin-left: 1em; font-size: 35px"></i>
+                    <i class="fab fa-css3 text-info" style=" font-size: 35px"></i>
                     <p style="margin-top: 5px; font-weight: bold;">CSS</p>
                   </div>
                   <div class="article">
@@ -126,17 +126,15 @@
                     <p style="margin-top: 5px;  font-weight: bold;">Bootstrap</p>
                   </div>
                 </div>
-
-
               </div>
               <div class="row d-flex icos">
                 <div class="col-sm d-flex justify-content-around">
                   <div class="article">
-                    <i class="fab fa-angular text-success" style=" font-size: 35px"></i>
+                    <i class="fab fa-angular " style=" font-size: 35px; color: purple;"></i>
                     <p style="margin-top: 5px;  font-weight: bold;">AngularJs</p>
                   </div>
                   <div class="article">
-                    <i class="fab fa-css3 text-info" style="margin-left: 1em; font-size: 35px"></i>
+                    <i class="fab fa-css3 text-info" style=" font-size: 35px"></i>
                     <p style="margin-top: 5px; font-weight: bold;">TailwindCSS</p>
                   </div>
                   <div class="article">
@@ -166,7 +164,7 @@
               </div>
               <div class="row d-flex icos">
                 <div class="col-sm d-flex justify-content-around">
-                  <div class="article"> <i class="fab fa-laravel text-success" style=" font-size: 35px"></i>
+                  <div class="article"> <i class="fab fa-laravel text-danger" style=" font-size: 35px"></i>
                     <p style="margin-top: 5px;  font-weight: bold;">Laravel</p>
                   </div>
                   <div class="article">
@@ -289,34 +287,54 @@
     }
 
     $(document).ready(function () {
-      const nightModeBtn = $("#nightModeBtn");
-      const footers = $("#footer");
-      const body = $("body");
-      const nav = $("#nav");
-      const dayModeBtn = $("#dayModeBtn");
-      const git = $("#git");
+    const nightModeBtn = $("#nightModeBtn");
+    const footers = $("#footer");
+    const body = $("body");
+    const nav = $("#nav");
+    const dayModeBtn = $("#dayModeBtn");
+    const git = $("#git");
 
-      nightModeBtn.on("click", function () {
-        footers.toggleClass("bg-dark");
-        body.toggleClass("bg-dark");
-        git.toggleClass("text-dark");
-        body.toggleClass("text-white");
-        nav.toggleClass("bg-dark");
-        dayModeBtn.toggle();
-        nightModeBtn.toggle();
+    // Function to set the theme based on current time
+    function setThemeBasedOnTime() {
+        const currentHour = new Date().getHours();
+        if (currentHour >= 18 || currentHour < 6) { // If it's between 6 PM and 6 AM
+            footers.addClass("bg-dark");
+            body.addClass("bg-dark text-white");
+            git.addClass("text-dark");
+            nav.addClass("bg-dark");
+            nightModeBtn.hide();
+            dayModeBtn.show();
+        } else { // Otherwise (daytime)
+            footers.removeClass("bg-dark");
+            body.removeClass("bg-dark text-white");
+            git.removeClass("text-dark");
+            nav.removeClass("bg-dark");
+            nightModeBtn.show();
+            dayModeBtn.hide();
+        }
+    }
 
-      });
-      dayModeBtn.on("click", function () {
-        footers.toggleClass("bg-dark");
-        body.toggleClass("bg-dark");
-        git.toggleClass("text-dark");
-        body.toggleClass("text-white");
-        nav.toggleClass("bg-dark");
-        dayModeBtn.toggle();
-        nightModeBtn.toggle();
+    // Call the function initially to set the theme based on current time
+    setThemeBasedOnTime();
 
-      });
+    // Toggle between dark and day mode
+    nightModeBtn.on("click", function () {
+        footers.addClass("bg-dark");
+        body.addClass("bg-dark text-white");
+        git.addClass("text-dark");
+        nav.addClass("bg-dark");
+        nightModeBtn.hide();
+        dayModeBtn.show();
     });
+    dayModeBtn.on("click", function () {
+        footers.removeClass("bg-dark");
+        body.removeClass("bg-dark text-white");
+        git.removeClass("text-dark");
+        nav.removeClass("bg-dark");
+        nightModeBtn.show();
+        dayModeBtn.hide();
+    });
+});
 
 
   </script>
